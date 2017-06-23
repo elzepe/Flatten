@@ -30,9 +30,9 @@ public class Test {
 
     public static void flatten(Object[] array) {
         ArrayList<Object> list = flattenP(array);
-
-        for (Object object : list) {
-            System.out.println(object.toString());
+        Integer[] flat = list.toArray(new Integer[list.size()]);
+        for (Integer value : flat) {
+            System.out.println(value);
         }
 
     }
